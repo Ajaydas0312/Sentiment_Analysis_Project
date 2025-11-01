@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ajay Govind | Portfolio</title>
+
+  <!-- Fonts + Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d9b9d7c8.js" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --bg-light: #f8fafc;
+      --bg-dark: #0f172a;
+      --text-light: #0f172a;
+      --text-dark: #f1f5f9;
+      --accent: #2563eb;
+      --accent2: #06b6d4;
+      --panel-light: #ffffff;
+      --panel-dark: #1e293b;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      margin: 0;
+      background: var(--bg-light);
+      color: var(--text-light);
+      transition: 0.4s;
+    }
+
+    body.dark {
+      background: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 8px;
+    }
+
+    .title {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 15px 10px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn.primary {
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      color: #fff;
+    }
+
+    .btn.primary:hover {
+      transform: scale(1.05);
+    }
+
+    .btn.outline {
+      border: 2px solid var(--accent);
+      color: var(--accent);
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: var(--panel-light);
+      border-radius: 12px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+      transition: 0.4s;
+    }
+
+    body.dark section {
+      background: var(--panel-dark);
+      box-shadow: 0 4px 18px rgba(255, 255, 255, 0.05);
+    }
+
+    section h2 {
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+    }
+
+    .socials a {
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      color: var(--accent);
+      transition: 0.3s;
+    }
+
+    .socials a:hover {
+      color: var(--accent2);
+    }
+
+    .theme-toggle {
+      position: fixed;
+      right: 20px;
+      top: 20px;
+    }
+
+    .theme-toggle button {
+      background: var(--panel-light);
+      border: none;
+      border-radius: 50%;
+      padding: 10px 12px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+
+    body.dark .theme-toggle button {
+      background: var(--panel-dark);
+    }
+
+    .theme-toggle button:hover {
+      transform: scale(1.1);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Theme toggle -->
+  <div class="theme-toggle">
+    <button id="themeBtn" title="Toggle theme"><i id="themeIcon" class="fas fa-moon"></i></button>
+  </div>
+
+  <!-- HERO -->
+  <header>
+    <h1>Ajay Govind</h1>
+    <p class="title">BTech Data Science Student | AI & ML Enthusiast</p>
+    <p>Passionate about using Python, SQL, and analytics to turn data into actionable insights.</p>
+    <a href="Ajaygovind_VK_Resume.pdf" class="btn primary" download>📄 Download Resume</a>
+    <a href="#contact" class="btn outline">Contact Me</a>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a B.Tech Data Science student at Noida International University. My focus areas are Machine Learning, Artificial Intelligence, and Data Analytics. I enjoy building models that solve real-world problems and visualizing insights using Python libraries.</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><b>Languages:</b> Python, SQL, Java, C (Basic)</li>
+      <li><b>Libraries:</b> NumPy, Pandas, Matplotlib, Scikit-learn</li>
+      <li><b>Tools:</b> Jupyter Notebook, Google Colab, VS Code, Excel</li>
+      <li><b>Database:</b> MySQL (Intermediate)</li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <h3>Sentiment Analysis using NLP</h3>
+    <p>Built a text-classification model in Python using Scikit-learn to analyze customer reviews and classify sentiments. Improved model accuracy by 12% with advanced NLP preprocessing techniques like tokenization, stopword removal, and lemmatization.</p>
+
+    <h3>AI Chatbot for Mental Health Support</h3>
+    <p>Developed an NLP-based chatbot using Python to provide mental health guidance. Implemented sentiment analysis for empathy and optimized conversational flows for better user experience.</p>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li><b>Data Science Intern — Navodita Infotech</b> (Aug 2025 – Sep 2025, Noida)</li>
+      <li><b>Data Science & Analytics Intern — Alcronix</b> (Jul 2025 – Aug 2025)</li>
+      <li><b>Operational Intern — SERVIZ</b> (Jun 2025 – Jul 2025, Noida)</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <footer id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out for internships or collaborations.</p>
+    <div class="socials">
+      <a href="mailto:ajay2govind123@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/ajay-govind-322aa7239" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>© 2025 Ajay Govind | Built with ❤️ using HTML, CSS & JS</p>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    const themeBtn = document.getElementById('themeBtn');
+    const themeIcon = document.getElementById('themeIcon');
+    themeBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      themeIcon.classList.toggle('fa-sun');
+      themeIcon.classList.toggle('fa-moon');
+    });
+  </script>
+</body>
+</html>
